@@ -1,0 +1,37 @@
+.text-red{
+    color:red;
+}
+.bg-lightblue{
+    background-color:lightblue;
+    color:black;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'Roboto', sans-serif;
+}
+p{
+    text-decoration:underline solid red;
+    text-align:justify;
+    line-height:20px;
+    word-spacing:10px;
+    letter-spacing:10px;
+    text-transform:uppercase;
+    text-indent:50px;
+    
+}
+#ln-demo{
+    width:200px;
+    height:200px;
+    margin:auto;
+    border:1px solid ;
+    
+    
+   
+}
+section{
+    text-align:center;
+    padding:89px 50px ;
+
+}
