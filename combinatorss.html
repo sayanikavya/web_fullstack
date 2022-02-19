@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        #parent > ul >li  a  {
+            color:rgb(230, 15, 15);
+        }
+        #parent + #sibling1 + #sibling {
+            background-color:yellow;
+            color:brown;
+        }
+        #parent ~ article{
+            background-color:green;
+            color:white;
+        }
+     
+    </style>
+</head>
+<body>
+    <main>
+        <div id="parent">
+            <ul id="child">
+                <li>
+                    <a href="#" >text</a>
+                </li>
+                <li>texture</li>
+            </ul>
+        </div>
+        <div id="sibling1">sibling1</div>
+        <div  id="sibling">sibling2</div>
+        <article id="bro">bro</article>
+        <article id="sis">sis</article>
+    </main>
+    
+</body>
+</html>
