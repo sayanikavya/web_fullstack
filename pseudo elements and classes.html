@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclass&elements</title>
+    <style>
+       
+        a:link{
+            color:red;
+        }
+        a:hover{
+            color:blue;
+        }
+        a:active{
+            color:green;
+        }
+        a:visited{
+            color:rgb(231, 164, 175);
+        }
+        ul li:nth-child(2n+2){
+            color:red;
+        }
+        ul li:nth-child(2n+1){
+             color:green;
+        }
+        ul li:nth-child(6){
+            font-weight:900;
+            font-size:20px;
+            color:brown;
+
+        }
+        ul li:first-child{
+            background-color:orangered;
+        }
+        ul li:last-child{
+            background-color:orangered;
+            color:brown;
+        }
+        .para::first-letter{
+            font-weight:900;
+            font-size:50px;
+           
+
+        }
+       .para::first-line{
+            color:skyblue;
+        }
+     
+        .para::after{
+            content:"----";
+        }
+        .para::selection{
+            background-color:pink;
+            color:green;
+        }
+        p a:only-child{
+            font-weight:400;
+            font-size:20px;
+            font-style:italic;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="#">HOME</a>
+ 
+        </p>
+        <ul>
+            <li>kavya</li>
+            <li>jfjfjgbj</li>
+            <li>hjbshvbsjv</li>
+            <li>gfdhjkjcjd</li>
+            <li>gsdhvsdvsvd</li>
+            <li>dfuddgdidhiudhiu</li>
+            <li>hgcsgsdviusdhuisd</li>
+            <li>gdkdjhskdbvkjvbj</li>
+            <li>djdjsvgdlhdjldvl</li>
+            <li>sindhu</li>
+        
+        </ul>
+        <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorem ipsa expedita voluptates illum quis nobis cupiditate placeat est, itaque voluptatem laborum officia asperiores ducimus alias labore ea mollitia quod?
+        </p>
+    </main>
+    
+</body>
+</html>
