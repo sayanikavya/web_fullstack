@@ -1,0 +1,17 @@
+#main{
+    width:200px;
+    height:200px;
+    background-color:yellowgreen;
+    color:black;
+    transition:2s;
+    transition-property:font-size,background-color;
+    transition-delay:1s;
+    transition-timing-function:cubic-bezier(0,1.21,1,-0.29);
+
+}
+#main:hover{
+    background-color:blue;
+    color:white;
+    font-size:50px;
+    width:300px;
+}
