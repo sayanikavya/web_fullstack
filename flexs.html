@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexboxes</title>
+    <style>
+      /* *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }*/
+        #header{
+            width:75%;
+            margin:auto;
+            display:flex;
+            height:100vh;
+            justify-content:space-between;
+          /* flex-direction:row;*/
+            flex-wrap: nowrap;
+            align-items:center;
+            align-content:center;
+        
+        }
+        #logo{
+            background-color:red;
+          /*  width:60%;*/
+           flex-grow:1;
+           /* order:2;*/
+
+        }
+        .navmain {
+            background-color:green;
+            flex-grow:3;
+            /*order:1;*/
+           /* width:60%;*/
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header id="header">
+        <div id="logo">
+            <h1>logo</h1>
+        </div>
+        <nav class="navmain">
+            <ul>
+                <h3>
+                <li>home</li>
+                <li>about </li>
+                <li>contact</li>
+                <li>portfolio</li>
+                </h3>
+            </ul>
+        </nav>
+      <!--  <div id="logo">
+            <h1>logo</h1>
+        </div>
+        <nav class="navmain">
+            <ul>
+                <h3>
+                <li>home</li>
+                <li>about </li>
+                <li>contact</li>
+                <li>portfolio</li>
+                </h3>
+            </ul>
+        </nav>-->
+        </header>
+    </main>
+    
+</body>
+</html>
