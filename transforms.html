@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms</title>
+    <style>
+        ul li{
+            margin-top:40px;
+            margin-left:30px;
+            width:200px;
+            height:200px;
+            text-align:center;
+            border:1px solid black;
+            list-style:none;
+            display:inline-block;
+            line-height:200px;
+            transition:1s;
+          
+        }
+        ul li:first-child:hover{
+            transform:scale(1.25,1.25);
+            cursor: pointer;
+        }
+        ul li:nth-child(2):hover{
+          transform:translate(50px,50px);
+          cursor: pointer;
+        }
+        ul li:nth-child(3):hover{
+            transform:rotatez(180deg);
+            /*border-radius:50%;*/
+            cursor: pointer;
+
+        }
+        ul li:last-child:hover{
+            transform:skewy(50deg );
+            cursor: pointer;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="list" >
+        <ul>
+            <li>scale</li>
+            <li>translate</li>
+            <li>rotate</li>
+            <li>skew</li>
+        </ul>
+    </div>
+</body>
+</html>

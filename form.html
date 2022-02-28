@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formtemplate</title>
+    <script src="https://kit.fontawesome.com/8770020ca7.js" crossorigin="anonymous">
+
+    </script>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        #main{
+            width:40%;
+            margin-left:7%;
+            margin-top:60px;
+           box-shadow:0px 0px 5px 2px black;
+        }
+        h1{
+            text-align:center;
+            padding-top:10px;
+            border-bottom:1px solid;
+            padding-bottom:5px;
+            
+        }
+        .formwraper{
+          padding :50px 130px;
+      
+        }
+        .formcontainer{
+            padding:0px;
+            display:flex;
+            border:1px solid;
+            margin-top:20px;
+          
+        }
+        .formcontainer input.typetext{
+            width:100%;
+            padding-left:10px;
+            line-height:10px;
+            font-size:18px;
+            border:none;
+            border-left:1px solid;
+      
+        }
+        .formcontainer .fa-solid{
+            padding:10px;
+            color:crimson;
+            font-size:18px;
+
+        }
+        input.typetext:focus{
+            outline:none;
+        }
+        .formcontainer .fa-envelope{
+            padding:10px;
+
+        }
+        #email{
+            padding:10px;
+            padding-left:10px;
+        }
+        .sign{
+            margin-left:33%;
+            width:30%;
+            background-color:crimson;
+            color:white;
+            box-shadow:1px 1px 1px 0px black;
+        
+            font-size:18px;
+            margin-top:20px;
+            
+        }
+       .sign:hover{
+           background-color:rgb(243, 134, 156);
+           color:black;
+           transform:scale(1.15,1.15);
+            cursor:pointer;
+       }
+       #city{
+           width:100%;
+           font-size:18px;
+           padding:0px  0px 0px 20px ;
+           border-left:1px solid;
+         
+           
+       }
+       #txtar{
+           width:100%;
+           border-left:1px solid;
+       }
+       
+
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Sign Up</h1>
+        <div class="formwraper">
+            <div class="formcontainer">
+                <i class="fa-solid fa-user"></i>
+             <input type="text" name="username" id="username" class="typetext" placeholder="username" autocomplete="off"/>
+            </div>
+            <div class="formcontainer">
+                <i class="fa-solid fa-lock"></i>
+             <input type="password" name="password" id="password" class="typetext" placeholder="password" autocomplete="off"/>
+            </div>
+            <div class="formcontainer">
+                <i class="fa-solid fa-envelope"></i>
+             <input type="email" name="email" id="email" class="typetext" placeholder="email" autocomplete="off"/>
+            </div>
+            <div class="formcontainer">
+                <i class="fa-solid fa-address-book"></i>
+             <input type="number" name="contact" id="contact" class="typetext" placeholder="phonenumber" autocomplete="off"/>
+            </div>
+            <div class="formcontainer">
+                <i class="fa-solid fa-user"></i>
+                <select name="city" id="city">
+                    <option value="none">----choose-----</option>
+                    <option value="nellore">nellore</option>
+                    <option value="tpt">tpt</option>
+                    <option value="hybd">hybd</option>
+
+                </select>
+            </div>
+            <div class="formcontainer">
+                <i class="fa-solid fa-user"></i>
+                <textarea name="" class="" id="txtar" cols="" rows=""></textarea>
+
+             </div>
+
+            <button type="button" class="sign">Sign In</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>

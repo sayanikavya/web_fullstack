@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formtemplate</title>
+    <script src="https://kit.fontawesome.com/8770020ca7.js" crossorigin="anonymous">
+
+    </script>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        #bgimage{
+             width:100%;
+            background-image:url(./double-exposure-image-business-profit-growth_31965-3022.webp);
+            background-repeat:no repeat;
+            background-attachment:fixed;
+            background-size:cover;
+            height:100vh;
+            display:flex;
+           
+            
+        }
+        #bgcolor{
+            width:50%;
+           
+            background-color:rgba(142, 134, 230, 0.5);
+            height:100%;
+            order:2;
+        
+         
+        }
+        #main{
+            width:50%;
+            box-shadow:0px 0px 3px 2px rgb(191, 191, 235);
+            background-color:rgb(175, 175, 230,0.6);
+            margin:70px;
+            order:1;
+        }
+        .formwraper{
+            padding:10px 50px;
+            cursor:pointer;
+          
+        }
+      
+        .formcontainer {
+          /*  position:absolute;*/
+           /* margin-left:180px;*/
+          
+            margin: 10px 50px;
+            display:flex;
+            border:1px solid rgb(151, 151, 236);
+            
+        
+        }
+        .formcontainer input.typetext{
+            width:100%;
+            
+            padding:10px;
+            border:none;
+            border-left:1px solid rgb(194, 194, 250);
+  
+        }
+        input.typetext:focus{
+            outline:none;
+        }
+        h1{
+            text-align:center;
+            padding:20px;
+            text-transform:capitalize;
+        }
+        .formcontainer .fa-solid{
+            padding:10px;
+            background-color:white;
+            color:rgb(143, 143, 248);
+           
+
+        }
+        .city{
+            width:100%;
+            color:rgba(12, 10, 10, 0.6);
+        }
+        .txtar{
+            width:100%;
+        }
+        #gender{
+         justify-content:space-around;
+          color:rgb(56, 56, 100);
+          border:none;
+          padding:10px;
+       
+        }
+        .checkbox{
+            margin-left:10%;
+            font-size:18px;
+            color:rgb(56, 56, 100);
+            padding-left:10px;
+
+        }
+         .sign{
+            background-color:yellow;
+            color:rgb(48, 48, 78);
+            text-align:center;
+            padding:10px 20px;
+             margin-left:45px;
+             margin-top:10px;
+            width:82%;
+         
+        }
+        .sign:hover{
+            transform:scale(1.2,1.2);
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+     
+ </style>
+</head>
+<body>
+    <div id="bgimage"> 
+       <div id="bgcolor"></div> 
+        <div id="main">
+          <h1>Register</h1>
+       
+            <div class="formwraper">
+                <div class="formcontainer">
+                    <i class="fa-solid fa-user"></i>
+                 <input type="text" name="username" id="username" class="typetext" placeholder="username" autocomplete="off"/>
+                </div>
+                <div class="formcontainer">
+                    <i class="fa-solid fa-lock"></i>
+                 <input type="password" name="password" id="password" class="typetext" placeholder="password" autocomplete="off"/>
+                </div>
+                <div class="formcontainer">
+                    <i class="fa-solid fa-envelope"></i>
+                 <input type="email" name="email" id="email" class="typetext" placeholder="email" autocomplete="off"/>
+                </div>
+                <div class="formcontainer">
+                    <i class="fa-solid fa-address-book"></i>
+                 <input type="number" name="contact" id="contact" class="typetext" placeholder="phonenumber" autocomplete="off"/>
+                </div>
+                <div class="formcontainer">
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <select name="city" class="city">
+                        <option value="none">select a city</option>
+                        <option value="hybd">hybd</option>
+                        <option value="nellore">nellore</option>
+                        <option value="tirupati">tirupati</option>
+                    </select>
+                
+                </div>
+                <div class="formcontainer">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <textarea name="text" id="textarea" class="txtar" cols="" rows=""></textarea>
+                </div>
+                <div class="formcontainer" id="gender">
+                    
+                 <input type="radio" name="gender" id="Male"  />Male
+                 <input type="radio" name="gender" id="Female"  />Female
+               
+                </div>
+                <div class="checkbox">
+                   
+                    <input type="checkbox" name="checkbox" />I agree with terms and conditions
+                </div>
+               <button type="buttom" class="sign">Register</button>
+        </div>
+         
+    
+
+    </div>
+</body>
+</html>
