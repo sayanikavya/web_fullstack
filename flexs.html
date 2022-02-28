@@ -31,13 +31,26 @@
 
         }
         .navmain {
+            
             background-color:green;
             flex-grow:3;
             /*order:1;*/
            /* width:60%;*/
+         
 
         }
+        .navmain .list{
+            display:flex;
+            justify-content:flex-end;
+            
+        }
+        li{
+            padding:10px;
+            list-style:none;
+            margin-left:40px;
 
+        }
+        
     </style>
 </head>
 <body>
@@ -48,7 +61,7 @@
         </div>
         <nav class="navmain">
             <ul>
-                <h3>
+                <h3 class="list">
                 <li>home</li>
                 <li>about </li>
                 <li>contact</li>
