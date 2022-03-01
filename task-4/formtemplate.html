@@ -38,7 +38,7 @@
             width:50%;
             box-shadow:0px 0px 3px 2px rgb(191, 191, 235);
             background-color:rgb(175, 175, 230,0.6);
-            margin:70px;
+            margin:60px;
             order:1;
         }
         .formwraper{
@@ -87,18 +87,24 @@
         .txtar{
             width:100%;
         }
-        #gender{
-         justify-content:space-around;
+        .gender{
+          justify-content:space-around;
           color:rgb(56, 56, 100);
           border:none;
-          padding:10px;
+          margin-left:20%;
        
         }
-        .checkbox{
+        .gen{
+            margin-top:20px;
+        }
+      
+        .checkbox {
             margin-left:10%;
             font-size:18px;
             color:rgb(56, 56, 100);
             padding-left:10px;
+            margin-top:15px;
+            margin-bottom:10px;
 
         }
          .sign{
@@ -157,17 +163,18 @@
                     <i class="fa-solid fa-file-lines"></i>
                     <textarea name="text" id="textarea" class="txtar" cols="" rows=""></textarea>
                 </div>
-                <div class="formcontainer" id="gender">
+                <div class="gen" >
+                   
                     
-                 <input type="radio" name="gender" id="Male"  />Male
-                 <input type="radio" name="gender" id="Female"  />Female
-               
+              <span class="gender"><input type="radio" name="gender" id="Male"  />Male</span>
+                 <span class="gender"><input type="radio" name="gender" id="Female"  />Female</span>
+           
                 </div>
                 <div class="checkbox">
                    
                     <input type="checkbox" name="checkbox" />I agree with terms and conditions
                 </div>
-               <button type="buttom" class="sign">Register</button>
+               <button type="button" class="sign">Register</button>
         </div>
          
     
