@@ -16,8 +16,8 @@ var i=0;
 while(i<users.length){
     console.log(users[i].id);
     i++;
-}
-*/
+}*/
+
 
 for(var i=0;i<10;i++){
     if((users[i].address.zipcode==="75034")&&(users[i].address.city==='frisco')){
