@@ -17,7 +17,8 @@ else {
 }
 
 var expect =prompt('any number from 1 to 6');
-if(expect==dice){
+console.log(parseInt(expect));
+if(parseInt(expect)===dice){
     alert('matches');
     console.log('num matches');
 }else{
