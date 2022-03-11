@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domhtml</title>
+    <style>
+        .demoJs{
+            background-color:brown;
+            color:white;
+            width:200px;
+            
+        }
+    </style>
+</head>
+<body>
+  
+    <div id="demo" class="one">hello</div>
+    <div id="demo1" class="one">hello</div>
+    <div id="demo2" class="demoJs">hello</div>
+<br/>
+  <div><a href="#" target="#">text</a></div>
+   <br/>
+    <div><img src="#" alt="not found"/></div>
+        <script>
+        //console.log(window);
+        //elements,class,id
+        var ElementName= document.getElementsByTagName("div");
+        var className= document.getElementsByClassName("one");
+       className.innerText="new text";
+     ElementName.innerText='text';
+      console.log(ElementName);
+      for (var i in className){
+           className[i].innerText="new text";
+       }
+      console.log(className);
+     var byId=document.getElementById('demo1');
+      byId.innerText='by new id';
+      console.log(byId);
+      var eleByClass=document.querySelector('.one');
+      eleByClass.innerText='By Query';
+      //console.log(eleByClass);
+      // innerText,innerHTML
+      byId.innerHTML='<h1>' + byId.innerText +'</h1>';
+      //stying in js 
+       eleByClass.className="demoJs";
+       byId.className="demoJs";
+       var anchorTag=document.querySelector('a');
+       anchorTag.className='demoJs';
+       var image=document.querySelector('img');
+       image.className='demoJs';
+      
+     document.querySelector('img').src;
+    
+     eleByClass.setAttribute('id','newId');
+     eleByClass.getAttribute('id');
+     console.log(eleByClass);
+      console.log(eleByClass.getAttribute('id'));
+    
+
+    </script>  
+</body>
+</html>
