@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsdom html</title>
+    <style>
+        ul .listItem{
+            border:1px solid;
+            width:200px;
+            list-style:none;
+            line-height:200px;
+            height:200px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="parentElement"></div>
+    <h1 id="h1">test</h1>
+    <ul id="demo">
+        <li>demo1</li>
+        <li>demo2</li>
+        <li>demo3</li>
+    </ul>
+    <script>
+        document.querySelector("#h1").innerHTML;
+        document.querySelector("#h1").innerHTML=
+        "<a href='#' target='#'>" +
+            document.querySelector("#h1").innerHTML + "old test</a>";
+      var Ul=document.createElement("ul");
+      var Li=document.createElement("li");
+      Li.innerText="Test1";
+      Li.className="listItem test";
+      //Li.setAttribute("class","listItem");
+      //console.log(Li);
+      Ul.appendChild(Li);
+      //Ul.removeChild(Li);
+      console.log(Ul);
+      document.querySelector("#parentElement").appendChild(Ul);
+      var _split="listItem/test";
+     
+      console.log( _split.split("/").splice(0,1));
+       
+      //console.log(typeof  Li.innerText );
+      console.log(document.querySelector("#demo").children[0]);
+      document.querySelector("#demo").children[0].parentNode.children[2].style.color="red";
+      console.log(document.querySelector("#demo").children[0].parentNode.children[1].parentNode.children[2]);
+
+    </script>
+</body>
+</html>

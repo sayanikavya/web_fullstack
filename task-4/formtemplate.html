@@ -5,126 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formtemplate</title>
-    <script src="https://kit.fontawesome.com/8770020ca7.js" crossorigin="anonymous">
-
-    </script>
-    <style>
-        *{
-            margin:0px;
-            padding:0px;
-            box-sizing:border-box;
-        }
-        #bgimage{
-             width:100%;
-            background-image:url(./double-exposure-image-business-profit-growth_31965-3022.webp);
-            background-repeat:no repeat;
-            background-attachment:fixed;
-            background-size:cover;
-            height:100vh;
-            display:flex;
-           
-            
-        }
-        #bgcolor{
-            width:50%;
-           
-            background-color:rgba(142, 134, 230, 0.5);
-            height:100%;
-            order:2;
-        
-         
-        }
-        #main{
-            width:50%;
-            box-shadow:0px 0px 3px 2px rgb(191, 191, 235);
-            background-color:rgb(175, 175, 230,0.6);
-            margin:60px;
-            order:1;
-        }
-        .formwraper{
-            padding:10px 50px;
-            cursor:pointer;
-          
-        }
-      
-        .formcontainer {
-          /*  position:absolute;*/
-           /* margin-left:180px;*/
-          
-            margin: 10px 50px;
-            display:flex;
-            border:1px solid rgb(151, 151, 236);
-            
-        
-        }
-        .formcontainer input.typetext{
-            width:100%;
-            
-            padding:10px;
-            border:none;
-            border-left:1px solid rgb(194, 194, 250);
-  
-        }
-        input.typetext:focus{
-            outline:none;
-        }
-        h1{
-            text-align:center;
-            padding:20px;
-            text-transform:capitalize;
-        }
-        .formcontainer .fa-solid{
-            padding:10px;
-            background-color:white;
-            color:rgb(143, 143, 248);
-           
-
-        }
-        .city{
-            width:100%;
-            color:rgba(12, 10, 10, 0.6);
-        }
-        .txtar{
-            width:100%;
-        }
-        .gender{
-          justify-content:space-around;
-          color:rgb(56, 56, 100);
-          border:none;
-          margin-left:20%;
-       
-        }
-        .gen{
-            margin-top:20px;
-        }
-      
-        .checkbox {
-            margin-left:10%;
-            font-size:18px;
-            color:rgb(56, 56, 100);
-            padding-left:10px;
-            margin-top:15px;
-            margin-bottom:10px;
-
-        }
-         .sign{
-            background-color:yellow;
-            color:rgb(48, 48, 78);
-            text-align:center;
-            padding:10px 20px;
-             margin-left:45px;
-             margin-top:10px;
-            width:82%;
-         
-        }
-        .sign:hover{
-            transform:scale(1.2,1.2);
-            cursor:pointer;
-            font-weight:bold;
-        }
-
-     
- </style>
+    <link rel="stylesheet" href="../css/formtemplate.css"/>
+    <link rel="icon" href="../images/logo icon.png" type="image/x-icon"/>
+    
+   
 </head>
 <body>
     <div id="bgimage"> 
@@ -147,7 +31,7 @@
                 </div>
                 <div class="formcontainer">
                     <i class="fa-solid fa-address-book"></i>
-                 <input type="number" name="contact" id="contact" class="typetext" placeholder="phonenumber" autocomplete="off"/>
+                 <input type="number" name="contact" id="contact" class="typetext" placeholder="phonenumber" autocomplete="off" maxlength='10'/>
                 </div>
                 <div class="formcontainer">
                     <i class="fa-solid fa-earth-asia"></i>
@@ -157,12 +41,13 @@
                         <option value="nellore">nellore</option>
                         <option value="tirupati">tirupati</option>
                     </select>
-                
                 </div>
-                <div class="formcontainer">
+                 <div><p class="error" style.color="red">please select city</p></div>
+           
+               <!-- <div class="formcontainer">
                     <i class="fa-solid fa-file-lines"></i>
                     <textarea name="text" id="textarea" class="txtar" cols="" rows=""></textarea>
-                </div>
+                </div>-->
                 <div class="gen" >
                    
                     
@@ -170,9 +55,10 @@
                  <span class="gender"><input type="radio" name="gender" id="Female"  />Female</span>
            
                 </div>
+                <div><p class="error1" style.color="red">please select gender</p></div>
                 <div class="checkbox">
                    
-                    <input type="checkbox" name="checkbox" />I agree with terms and conditions
+                    <input type="checkbox" name="checkbox" /><p class="para">I agree with terms and conditions</p>
                 </div>
                <button type="button" class="sign">Register</button>
         </div>
@@ -180,5 +66,9 @@
     
 
     </div>
+    <script src="https://kit.fontawesome.com/8770020ca7.js" crossorigin="anonymous">
+
+    </script>
+    <script src="../js/formtemplate.js"></script>
 </body>
 </html>

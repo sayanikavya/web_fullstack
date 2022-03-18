@@ -1,0 +1,134 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+#bgimage{
+     width:100%;
+    background-image:url(../images/double-exposure-image-business-profit-growth_31965-3022.webp);
+    background-repeat:no repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    height:100vh;
+    display:flex;
+   
+    
+}
+#bgcolor{
+    width:50%;
+    
+    background-color:rgba(142, 134, 230, 0.5);
+    height:100%;
+    order:2;
+
+ 
+}
+#main{
+    width:50%;
+    height:86%;
+    box-shadow:0px 0px 3px 2px rgb(191, 191, 235);
+    background-color:rgb(175, 175, 230,0.6);
+    margin:60px;
+    order:1;
+}
+.formwraper{
+    padding:10px 50px;
+    cursor:pointer;
+  
+}
+
+.formcontainer {
+  /*  position:absolute;*/
+   /* margin-left:180px;*/
+  
+    margin: 10px 50px;
+    display:flex;
+    border:1px solid rgb(151, 151, 236);
+    
+
+}
+.formcontainer input.typetext{
+    width:100%;
+    
+    padding:10px;
+    border:none;
+    border-left:1px solid rgb(194, 194, 250);
+
+}
+input.typetext:focus{
+    outline:none;
+}
+h1{
+    text-align:center;
+    padding:20px;
+    text-transform:capitalize;
+}
+.formcontainer .fa-solid{
+    padding:10px;
+    background-color:white;
+    color:rgb(143, 143, 248);
+   
+
+}
+.city{
+    width:100%;
+    color:rgba(12, 10, 10, 0.6);
+}
+.txtar{
+    width:100%;
+}
+.gender{
+  justify-content:space-around;
+  color:rgb(56, 56, 100);
+  border:none;
+  margin-left:20%;
+
+}
+.gen{
+    margin-top:20px;
+}
+
+.checkbox {
+   margin-left:10%;
+    font-size:18px;
+    color:rgb(56, 56, 100);
+   
+    margin-top:15px;
+   margin-bottom:10px;
+    display:flex;
+    padding:0 10px;
+
+}
+ .sign{
+    background-color:yellow;
+    color:rgb(48, 48, 78);
+    text-align:center;
+    padding:10px 20px;
+     margin-left:45px;
+     margin-top:10px;
+    width:82%;
+ 
+}
+.sign:hover{
+    transform:scale(1.2,1.2);
+    cursor:pointer;
+    font-weight:bold;
+}
+.error{
+    color:red;
+    display:none;
+    margin-top:20px;
+     margin-left:75px;
+}
+.error1{
+    color:red;
+    display:none;
+    margin-top:20px;
+     margin-left:75px;
+}
+
+.para{
+    padding:0 10px;
+    
+  
+}

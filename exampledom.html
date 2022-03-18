@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample form table</title>
+    <style>
+        table ,#mainform {
+             width:50%;
+            margin:100px auto;
+        }
+        table,th,td{
+            border-bottom:1px solid black;
+            border-collapse:collapse;
+        }
+        th,td{
+            padding:10px;
+            text-align:center;
+        }
+        tr:nth-child(even){
+            background-color:rgb(149, 167, 167);
+        }
+     
+    </style>
+</head>
+<body>
+    <form id="mainform">
+
+     <input type="text" id="username"  placeholder="username" autocomplete="off"/>
+     <input type="text" id="age" placeholder="age" autocomplete="off"/>
+     <input type="text" id="contact" placeholder="contact"  maxlength='10' autocomplete="off"/>
+     <button  type="button" id="addbtn">Add</button>
+     <button type="button" id="save">Save</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>numid</th>
+                <th>name</th>
+                <th>age</th>
+                <th>contact</th>
+                <th>edit/delete</th>
+            </tr>
+        </thead>
+        <tbody id="tablecontent">
+           <!--<tr>
+            <td>1</td>
+              <td>kavya</td>
+              <td>30</td>
+              <td>6692468590</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>kavya</td>
+            <td>30</td>
+            <td>6692468590</td>
+        </tr>-->
+        </tbody>
+    </table>
+    <script>
+     var username,age,contact,tablecontent,addbtn;
+   
+     addbtn=document.querySelector('#addbtn');
+     tablecontent=document.querySelector('#tablecontent');
+     addbtn.addEventListener('click' ,function(){
+     username=document.querySelector('#username').value;
+     age=document.querySelector('#age').value;
+     contact=document.querySelector('#contact').value;
+  
+     console.log(username,age,contact);
+    
+     var Tr= document.createElement('tr');
+     var Tdnum=document.createElement('td');
+     var Tdname=document.createElement('td');
+     var Tdage=document.createElement('td');
+     var Tdcontact=document.createElement('td');
+    var Tdeditordelete=document.createElement('td');
+
+     var editBtn=document.createElement("button");
+     var delBtn=document.createElement("button");
+     editBtn.innerText="edit";
+     delBtn.innerText="delete";
+
+    Tdeditordelete.appendChild(editBtn);
+    Tdeditordelete.appendChild(delBtn);
+    
+     Tr.appendChild(Tdnum);
+     Tr.appendChild(Tdname);
+     Tr.appendChild(Tdage);
+     Tr.appendChild(Tdcontact);
+     Tr.appendChild(Tdeditordelete);
+     Tdnum.innerText=1;
+     Tdname.innerText=username;
+     Tdage.innerText=age;
+     Tdcontact.innerText=contact;
+     tablecontent.appendChild(Tr);
+     console.log(Tr);
+     delBtn.onclick= function(){
+         //debugger;
+         //console.log(this.parentNode);
+     tablecontent.removeChild(this.parentNode.parentNode);
+        //this.parentNode.parentNode.parentElement.removeChild(this.parentNode.parentNode);
+      
+     }
+    /*editBtn.onclick=function(){
+        console.log(this.parentNode);
+        tablecontent.appendChild(this.parentNode.parentNode);  
+    }*/
+  
+     });
+    
+    </script>
+</body>
+</html>
